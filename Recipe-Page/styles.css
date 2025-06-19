@@ -1,0 +1,136 @@
+:root {
+  /*colors*/
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #f3e5d7;
+  --brown-800: #854632;
+  --white: #fff;
+  /*fonts*/
+  --font-young-serif: "YoungSerif", serif;
+  --font-outfit: "Outfit", sans-serif;
+  --font-size-title-d: 4rem;
+  --font-size-title-m: 3.6rem;
+  --font-size-subtitle: 2.8rem;
+  --font-size-notes: 2rem;
+  --font-size-body: 1.6rem;
+  /*spacing*/
+  --space-100: 0.8rem;
+  --space-200: calc(var(--space-100) * 2);
+  --space-300: calc(var(--space-100) * 3);
+  --space-400: calc(var(--space-100) * 4);
+  --space-500: calc(var(--space-100) * 5);
+  --space-600: calc(var(--space-100) * 6);
+  --space-1600: calc(var(--space-100) * 16);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    padding: 10%;
+    background: var(--stone-100);
+    font-family: var(--font-outfit);
+    font-size: var(--font-size-body);
+}
+
+#container {
+ height: 100%;
+ background: var(--white);
+ padding: 1rem;
+ border-radius: 1em;
+}
+#preparation {
+  background-color: var(--rose-50);
+  padding: 0.5rem;
+  border-radius: 5%;
+}
+#preparation > h2 {
+    color: var(--rose-800);
+}
+
+img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+footer {
+    margin-top: 10rem;
+    margin-bottom: -10rem;
+}
+
+p,span{
+    color: var(--stone-600);
+}
+
+.diet {
+    display: block;
+    color: var(--brown-800);
+    margin-left: 50%;
+    margin-bottom: 20px;
+    margin-top: -22px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color:  var(--brown-800);
+}
+
+ul{
+    list-style-type: square;
+}
+ol{
+    color: var(--brown-800);
+}
+ol strong {
+    color: var(--stone-900);
+} 
+
+li {
+    margin: var(--space-100);
+    color: var(--stone-600);
+}
+
+hr {
+    border-color: var(--stone-150);
+    margin-top: var(--space-300);
+}
+
+#nutrition-info {
+    padding-top: 0.2rem;
+    color: var(--stone-600);
+}
+
+
+ @media only screen and (min-width: 1024px ) {
+        #container {
+            padding: 3rem;
+        }
+        h1 {
+            font-size: var(--font-size-title-d);
+            text-align: center;
+        }
+    }
+
+
+      @media only screen and (max-width: 1023px ) {
+        h1 {
+            text-align: center;
+            font-size: var(--font-size-title-m);
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            margin-top: -5%;
+            margin-left: -5%;
+            width: 109%;
+        }
+    }
