@@ -76,10 +76,11 @@ p,span{
 
 h1 {
     text-align: center;
+    color: var(--stone-900);
 }
 
 h2 {
-    color:  var(--brown-800);
+    color: var(--brown-800);
 }
 
 ul{
